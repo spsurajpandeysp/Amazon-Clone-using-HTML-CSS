@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+    <div class="index_page">
+        <header>
+            <div class="navbar">
+                <div class="nav-logo border">
+                    <div class="logo"></div>
+                </div>
+                <div class="nav-feature border">
+                    <div class="nav-Home border">
+                        <p>Home</p>
+                    </div>
+                    <div class="nav-Services border">
+                        <p>Services</p>
+                    </div>
+                    <div class="nav-Feedback border">
+                        <p>Feedback</p>
+                    </div>
+                    <div class="nav-Complain border">
+                        <p>Complain</p>
+                    </div>
+                    <div class="nav-About border">
+                        <p>About</p>
+                    </div>
+                    <div class="nav-Contact border">
+                        <p>Contact Us</p>
+                    </div>
+                </div>
+
+            </div>
+        </header>
+        <home>
+            <div class="home-page">This is object detection photo</div>
+        </home>
+        <services>
+            <div class="service-section">
+                <div class="box1 box">
+                    <h4>Object Detection</h4>
+                    <div class="box1-img"></div>
+                    <p class="services_para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet, error.
+                        Rerum atque minus rem accusamus temporibus obcaecati ipsam quisquam consequatur, porro, sapiente
+                        dicta voluptas labore vitae doloremque. Error porro a exercitationem cumque.</p>
+                    <button type="button">
+                        <a href="{% url 'ObjectDetection' %}">Click here!</a>
+                    </button>
+
+                </div>
+                <div class="box2 box">
+                    <h4>Object Detection</h4>
+                    <div class="box2-img"></div>
+                    <p class="services_para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet, error.
+                        Rerum atque minus rem accusamus temporibus obcaecati ipsam quisquam consequatur, porro, sapiente
+                        dicta voluptas labore vitae doloremque. Error porro a exercitationem cumque.</p>
+                    <button type="button">
+                        <a href="{% url 'PeopleCounting' %}">Click here!</a>
+                    </button>
+                </div>
+                <div class="box3 box">
+                    <h4>Object Detection</h4>
+                    <div class="box3-img"></div>
+                    <p class="services_para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet, error.
+                        Rerum atque minus rem accusamus temporibus obcaecati ipsam quisquam consequatur, porro, sapiente
+                        dicta voluptas labore vitae doloremque. Error porro a exercitationem cumque.</p>
+                    <button type="button">
+                        <a href="{% url 'CarCounting' %}">Click here!</a>
+                    </button>
+                </div>
+
+            </div>
+        </services>
+
+        <div class="feedback-complain">
+            <div class="feedback_page box-feed-comp">
+                <h2>Feedback Form</h2>
+                <form action="">
+                    <label for="fname">First Name:</label>
+                    <input type="text" id="fname" name="fname">
+                    <br>
+                    <br>
+                    <label for="fname">Last Name:</label>
+                    <input type="text" id="fname" name="fname">
+                    <br>
+                    <br>
+                    <label for="email">Email Id:</label>
+                    <input type="email" id="email" name="email">
+                    <br>
+                    <br>
+                    <label for="rating">Choose Raiting:</label>
+                    <select name="rating">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <br>
+                    <br>
+                    <label for="review">Review:</label>
+                    <input type="text" id="review" name="review">
+                    <br>
+                    <br>
+                    <button type="submit">Submit Feedback</button>
+
+                </form>
+            </div>
+            <div class="complain-page box-feed-comp">
+                <h2>Complain Form</h2>
+                <form action="">
+                    <label for="fname">First Name:</label>
+                    <input type="text" id="fname" name="fname">
+                    <br>
+                    <br>
+                    <label for="lname">Last  Name:</label>
+                    <input type="text" id="lname" name="lname">
+                    <br>
+                    <br>
+                    <label for="email">Email   Id:</label>
+                    <input type="email" id="email" name="email">
+                    <br>
+                    <br>
+                    <label for="image">Upload Img:</label>
+                    <input id="file" type="image" name="image">
+                    <br>
+                    <br>
+                    <label for="complein">write complain:</label>
+                    <input type="text" id="complain" name="complain">
+                    <br>
+                    <br>
+                    <button type="submit">Submit Complain</button>
+                </form>
+            </div>
+            <div class="contact-page box-feed-comp">
+                <h2>Contact Us Form</h2>
+                <form action="">
+                    <label for="fname">First Name:</label>
+                    <input type="text" id="fname" name="fname">
+                    <br>
+                    <br>
+                    <label for="lname">Last  Name:</label>
+                    <input type="text" id="lname" name="lname">
+                    <br>
+                    <br>
+                    <label for="email">Email   Id:</label>
+                    <input type="email" id="email" name="email">
+                    <br>
+                    <br>
+                    <label for="phone">Phone   No:</label>
+                    <input id="phone" type="number" name="phone">
+                    <br>
+                    <br>
+                    <label for="gender">Select Gender:</label>
+                    <select id="gender" name="gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <br>
+                    <br>
+                    <button type="submit">Submit Details</button>
+                </form>
+            </div>
+        </div>
+        <about>
+            <div class="about-page">
+                <h3 class="about-page-h3">About Us</h3>
+                <div class="about-page-content">
+                    <h2 class="about-page-content-title">Developed By Suraj and tanmay</h2>
+                    <p class="about-page-content-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam a
+                        provident perferendis deserunt recusandae ex vitae corrupti eveniet minus iusto.</p>
+                </div>
+
+            </div>
+        </about>
+        <footer>
+            <div class="foot-panel1">
+                <ul>
+                    <p>Contact Details</p>
+                    <a>surajpandey7493@gmail.com</a>
+                    <a>surajpandey7493@gmail.com</a>
+                    <a>9149058210</a>
+                    <a>9149058210</a>
+                    <a>spsurajpandeysp</a>
+                    <a>spsurajpandeysp</a>
+                </ul>
+                <ul>
+                    <p>Features</p>
+                    <a>Homme</a>
+                    <a>Services</a>
+                    <a>Feedback</a>
+                    <a>About Us</a>
+                    <a>Complain</a>
+                    <a>Contact Us</a>
+                </ul>
+                <ul>
+                    <p>Get to Know More Us</p>
+                    <a>Licence</a>
+                    <a>security</a>
+                    <a>Accuracy</a>
+                    <a>Free ot Use</a>
+                    <a>Guide</a>
+                    <a>Help</a>
+                </ul>
+            </div>
+            <div class="foot-panel2">
+                <div class="pages">
+                    <a>Conditions of Use</a>
+                    <a>Privacy Notice</a>
+                    <a>Your Ads Privacy Chocies</a>
+                </div>
+                <div class="copyright">
+                    copyright by object detection website owner
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
